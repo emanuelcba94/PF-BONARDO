@@ -533,9 +533,29 @@
     transform: scale(1.2);
 }
 
+.textoFoto1 {
+    color: #FFFFFF;
+}
+.textoFoto1 span{
+    color: #ffffff5d;
+}
+
 .fotos2 {
-    color: white;
+    width: 800px;
+    width: 600px;
+    overflow: hidden;
     margin: 10px;
+}
+
+.segundaFoto {
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    object-fit: cover;
+}
+
+.segundaFoto:hover {
+    transform: scale(1.2);
 }
 
 .publicidadNikon1 {
