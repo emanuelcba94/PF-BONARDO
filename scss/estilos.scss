@@ -1,3 +1,6 @@
+@import 'variables';
+@import 'header';
+
 :root {
     --color1: #FD790A;
     --color2: #FFFFFF;
@@ -24,10 +27,11 @@
     font-family: OpenSans;
     src: url(../fonts/OpenSans-VariableFont_wdth\,wght.ttf);
 }
+
 /* INDEX ------------------------------------------------------------------------------- INDEX */
 /* BODY ------------------------------------------------------------------------------- BODY */
 .fondoGeneral {
-    background-color: var(--color5);
+    background-color: $color5;
 }
 
 /* INICIO GRILLA ------------------------------------------------------------------------------- INICIO GRILLA */
@@ -44,30 +48,6 @@
     grid-template-rows: 1fr 1fr 1fr 1fr;
     height: 100vh;
     margin: 0;
-}
-
-/* CABECERA */
-.header {
-    grid-area: header;
-    height: 150px;
-    width: 100%;
-    background-color: #00315A;
-    background-image: linear-gradient(to right, #00315A, #FD790A);
-    padding: 30px;
-}
-
-.headerLogo {
-    width: 90px;
-    height: 90px;
-    float: left;
-    /* border: 5px solid black; */
-}
-
-.header h1 {
-    color: #FFF;
-    text-transform: uppercase;
-    font-size: 80px;
-    float: right;
 }
 
 /* MENU DE NAVEGACION */
@@ -290,6 +270,7 @@
     border-radius: 50px;
     box-shadow: 0 0 10px green;
 }
+
 /* FIN GRILLA ------------------------------------------------------------------------------- FIN GRILLA */
 
 /* INICIO MEDIAS QUERIES INDEX ------------------------------------------------------------------------------- INICIO MEDIAS QUERIES INDEX */
@@ -487,6 +468,7 @@
         text-align: center;
     }
 }
+
 /* FIN MEDIAS QUERIES INDEX ------------------------------------------------------------------------------- FIN MEDIAS QUERIES INDEX */
 
 /* INICIO PAGINA FOTOS ------------------------------------------------------------------------------- INICIO PAGINA FOTOS */
@@ -531,12 +513,13 @@
     justify-content: center;
     align-items: center;
 }
+
 /* FIN PAGINA FOTOS ------------------------------------------------------------------------------- FIN PAGINA FOTOS */
 
 /* INICIO MEDIAS QUERIES FOTOS ------------------------------------------------------------------------------- INICIO MEDIAS QUERIES FOTOS */
 @media only screen and (min-width: 320px) and (max-width: 479px) {
     #grilla1 {
-        grid-template-areas: 
+        grid-template-areas:
             "header"
             "navbar"
             "fotos"
@@ -554,32 +537,34 @@
         text-align: center;
     }
 }
+
 /* FIN MEDIAS QUERIES FOTOS ------------------------------------------------------------------------------- FIN MEDIAS QUERIES FOTOS */
 
 /* INICIO PAGINA TIENDA ------------------------------------------------------------------------------- INICIO PAGINA TIENDA */
 /* MENU DE NAVEGACION */
-.menu{
+.menu {
     grid-area: menu;
     background-color: #FD790A;
     padding: 5px;
     text-align: center;
 }
 
-.menu li{
+.menu li {
     display: inline-block;
     text-transform: uppercase;
     width: 15%;
     font-size: 25px;
 }
 
-.menu li a{
+.menu li a {
     text-decoration: none;
     color: white;
 }
 
-.menu li a:hover{
+.menu li a:hover {
     color: #00315A;
 }
+
 /* FIN MENU DE NAVEGACION */
 
 .sectionTienda1 {
@@ -656,32 +641,34 @@
 .publicidadNikon {
     margin-top: 10px;
 }
+
 /* FIN PAGINA TIENDA ------------------------------------------------------------------------------- FIN PAGINA TIENDA */
 
 /* INICIO PAGINA CONTACTO ------------------------------------------------------------------------------- INICIO PAGINA CONTACTO */
 /* MENU DE NAVEGACION */
-.menu{
+.menu {
     grid-area: menu;
     background-color: #FD790A;
     padding: 5px;
     text-align: center;
 }
 
-.menu li{
+.menu li {
     display: inline-block;
     text-transform: uppercase;
     width: 15%;
     font-size: 25px;
 }
 
-.menu li a{
+.menu li a {
     text-decoration: none;
     color: white;
 }
 
-.menu li a:hover{
+.menu li a:hover {
     color: #00315A;
 }
+
 /* FIN MENU DE NAVEGACION */
 
 .principalContacto1 {
@@ -707,32 +694,34 @@
     margin: 10px;
 
 }
+
 /* FIN PAGINA CONTACTO ------------------------------------------------------------------------------- FIN PAGINA CONTACTO */
 
 /* INICIO PAGINA SOBRE MI ------------------------------------------------------------------------------- INICIO PAGINA SOBRE MI */
 /* MENU DE NAVEGACION */
-.menu{
+.menu {
     grid-area: menu;
     background-color: #FD790A;
     padding: 5px;
     text-align: center;
 }
 
-.menu li{
+.menu li {
     display: inline-block;
     text-transform: uppercase;
     width: 15%;
     font-size: 25px;
 }
 
-.menu li a{
+.menu li a {
     text-decoration: none;
     color: white;
 }
 
-.menu li a:hover{
+.menu li a:hover {
     color: #00315A;
 }
+
 /* FIN MENU DE NAVEGACION */
 
 .descripcion {
@@ -747,4 +736,5 @@
     display: inline-block;
     margin: 10px;
 }
+
 /* FIN PAGINA SOBRE MI ------------------------------------------------------------------------------- FIN PAGINA SOBRE MI */

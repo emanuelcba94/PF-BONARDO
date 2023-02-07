@@ -1,0 +1,23 @@
+/* CABECERA */
+.header {
+    grid-area: header;
+    height: 150px;
+    width: 100%;
+    background-color: $color3;
+    background-image: linear-gradient(to right, $color3, $color1);
+    padding: 30px;
+
+    .headerLogo {
+        width: 90px;
+        height: 90px;
+        float: left;
+        /* border: 5px solid black; */
+    }
+
+    h1 {
+        color: $color2;
+        text-transform: uppercase;
+        font-size: 80px;
+        float: right;
+    }
+}
