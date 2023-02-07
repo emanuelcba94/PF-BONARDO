@@ -1,0 +1,64 @@
+/* MENU DE NAVEGACION */
+/* .menu{
+    grid-area: menu;
+    background-color: #FD790A;
+    margin-top: 10px;
+    padding: 5px;
+    text-align: center;
+}
+
+.menu li{
+    display: inline-block;
+    text-transform: uppercase;
+    width: 15%;
+    font-size: 25px;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: white;
+}
+
+.menu li a:hover{
+    color: #00315A;
+    text-decoration: underline;
+} */
+
+/* INICIO MENU DE NAVEGACION BOOTSTRAP*/
+.navbar {
+    grid-area: navbar;
+    background-color: #FD790A !important;
+    color: #FFFFFF;
+
+    .navbar-brand {
+        color: #00315A !important;
+        text-transform: uppercase;
+        font-weight: bolder;
+    }
+
+    .navbar-brand:hover {
+        color: #FFFFFF !important;
+    }
+
+    .collapse {
+        background-color: #FD790A;
+    }
+
+    .nav-link {
+        text-transform: uppercase;
+        font-size: 25px;
+        font-weight: bolder;
+        color: #FFFFFF !important;
+    }
+
+    .nav-link:hover {
+        background-color: #00315A;
+        color: #FCA500 !important;
+    }
+
+    .navbar-toggler {
+        background-color: #00315A;
+    }
+}
+
+/* FIN DE MENU DE NAVEGACION BOOTSTRAP*/

@@ -1,0 +1,60 @@
+/* PRINCIPAL DOS */
+.masFotos {
+    grid-area: masFotos;
+    justify-self: center;
+    text-align: center;
+    align-self: center;
+    color: #FFFFFF;
+    width: 50%;
+    background-color: #00315A;
+    border: 3px solid #FFFFFF;
+    padding: 20px;
+
+}
+
+.masFotos h1 {
+    color: yellow;
+    margin-bottom: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 40px;
+    text-shadow: 0 0 10px #000000;
+}
+
+.masFotos p {
+    margin-bottom: 30px;
+}
+
+#nikonBoton {
+    border: none;
+    padding: 10px;
+    background-color: yellow;
+    color: black;
+    border-radius: 2px;
+    border-bottom: 03px solid black;
+    cursor: grab;
+    transition: all 0.5s ease-out;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+#nikonBoton:hover {
+    padding: 15px;
+    background-color: black;
+    color: white;
+    border-bottom: 03px solid yellow;
+}
+
+/* .masFotos a {
+    background-color: #FD790A;
+    color: #00315A;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.masFotos a:hover {
+    background-color: #FFFFFF;
+
+} */
