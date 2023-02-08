@@ -1,0 +1,104 @@
+/* INICIO PAGINA FOTOS ------------------------------------------------------------------------------- INICIO PAGINA FOTOS */
+
+#grilla1 {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "navbar navbar"
+        "fotos fotos"
+        "publicidadNikon1 publicidadNikon1"
+        "pieDePagina pieDePagina";
+    grid-template-columns: repeat(2fr);
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    height: 100vh;
+    margin: 0;
+}
+
+.fotos {
+    grid-area: fotos;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.fotos1 {
+    width: 800px;
+    width: 600px;
+    overflow: hidden;
+    margin: 10px;
+
+    .primeraFoto {
+        width: 100%;
+        height: 100%;
+        transition: 0.5s;
+        object-fit: cover;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+
+}
+
+.textoFoto1 {
+    color: #FFFFFF;
+
+    span {
+        color: #ffffff5d;
+    }
+}
+
+.fotos2 {
+    width: 800px;
+    width: 600px;
+    overflow: hidden;
+    margin: 10px;
+
+    .segundaFoto {
+        width: 100%;
+        height: 100%;
+        transition: 0.5s;
+        object-fit: cover;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+}
+
+.publicidadNikon1 {
+    grid-area: publicidadNikon1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* FIN PAGINA FOTOS ------------------------------------------------------------------------------- FIN PAGINA FOTOS */
+
+/* INICIO MEDIAS QUERIES FOTOS ------------------------------------------------------------------------------- INICIO MEDIAS QUERIES FOTOS */
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+    #grilla1 {
+        grid-template-areas:
+            "header"
+            "navbar"
+            "fotos"
+            "publicidadNikon1"
+            "pieDePagina";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .fotos {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+/* FIN MEDIAS QUERIES FOTOS ------------------------------------------------------------------------------- FIN MEDIAS QUERIES FOTOS */

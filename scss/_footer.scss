@@ -1,15 +1,5 @@
-/* PUBLICIDAD */
-.publicidadNikon {
-    grid-area: publicidadNikon;
-    text-align: center;
-}
-
-.videoNikon {
-    margin: 10px;
-    border: 10px solid #00315A;
-}
-
 /* PIE DE PAGINA */
+
 .pieDePagina {
     grid-area: pieDePagina;
     background-color: #00315A;
@@ -20,21 +10,21 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-}
 
-.pieDePaginaDerechos {
-    color: var(--color2);
-    margin-bottom: 10px;
-    margin: 0 auto;
+    .pieDePaginaDerechos {
+        color: var(--color2);
+        margin-bottom: 10px;
+        margin: 0 auto;
+    }
 }
 
 .redesSociales {
     font-size: 30px;
     letter-spacing: 3px;
-}
 
-.redesSociales i {
-    color: #FD790A;
+    i {
+        color: #FD790A;
+    }
 }
 
 /* ICONO WHATSAPP */

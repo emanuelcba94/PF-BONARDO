@@ -23,25 +23,26 @@
     color: #00315A;
     text-decoration: underline;
 } */
+/* FIN MENU DE NAVEGACION */
 
 /* INICIO MENU DE NAVEGACION BOOTSTRAP*/
 .navbar {
     grid-area: navbar;
-    background-color: #FD790A !important;
+    background-color: #00315A !important;
     color: #FFFFFF;
 
     .navbar-brand {
         color: #00315A !important;
         text-transform: uppercase;
         font-weight: bolder;
-    }
 
-    .navbar-brand:hover {
-        color: #FFFFFF !important;
+        &:hover {
+            color: #FFFFFF !important;
+        }
     }
 
     .collapse {
-        background-color: #FD790A;
+        background-color: #00315A;
     }
 
     .nav-link {
@@ -49,16 +50,15 @@
         font-size: 25px;
         font-weight: bolder;
         color: #FFFFFF !important;
-    }
 
-    .nav-link:hover {
-        background-color: #00315A;
-        color: #FCA500 !important;
+        &:hover {
+            background-color: #00315A;
+            color: #FCA500 !important;
+        }
     }
 
     .navbar-toggler {
-        background-color: #00315A;
+        background-color: #FD790A;
     }
 }
-
 /* FIN DE MENU DE NAVEGACION BOOTSTRAP*/

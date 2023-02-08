@@ -1,3 +1,42 @@
+:root {
+  --color1: #FD790A;
+  --color2: #FFFFFF;
+  --color3: #00315A;
+  --color4: #FCA500;
+  --color5: #000000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* TIPOGRAFIA */
+* {
+  font-family: OpenSans;
+}
+
+@font-face {
+  font-family: OpenSans;
+  src: url(../fonts/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+/* BODY ------------------------------------------------------------------------------- BODY */
+.fondoGeneral {
+  background-color: #000000;
+}
+
+/* INICIO GRILLA ------------------------------------------------------------------------------- INICIO GRILLA */
+#grilla {
+  display: grid;
+  grid-template-areas: "header header" "navbar navbar" "fotosPrincipales fotosPrincipales" "publicidadNikon publicidadNikon" "masFotos masFotos" "pieDePagina pieDePagina";
+  grid-template-columns: repeat(2fr);
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  height: 100vh;
+  margin: 0;
+}
+
+/* FIN GRILLA ------------------------------------------------------------------------------- FIN GRILLA */
 /* CABECERA */
 .header {
   grid-area: header;
@@ -18,48 +57,6 @@
   text-transform: uppercase;
   font-size: 80px;
   float: right;
-}
-
-:root {
-  --color1: #FD790A;
-  --color2: #FFFFFF;
-  --color3: #00315A;
-  --color4: #FCA500;
-  --color5: #000000;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* TIPOGRAFIA */
-* {
-  font-family: OpenSans;
-}
-
-/* html{
-    scroll-behavior: smooth;
-} */
-@font-face {
-  font-family: OpenSans;
-  src: url(../fonts/OpenSans-VariableFont_wdth\,wght.ttf);
-}
-/* INDEX ------------------------------------------------------------------------------- INDEX */
-/* BODY ------------------------------------------------------------------------------- BODY */
-.fondoGeneral {
-  background-color: #000000;
-}
-
-/* INICIO GRILLA ------------------------------------------------------------------------------- INICIO GRILLA */
-#grilla {
-  display: grid;
-  grid-template-areas: "header header" "navbar navbar" "fotosPrincipales fotosPrincipales" "publicidadNikon publicidadNikon" "masFotos masFotos" "pieDePagina pieDePagina";
-  grid-template-columns: repeat(2fr);
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  height: 100vh;
-  margin: 0;
 }
 
 /* MENU DE NAVEGACION */
@@ -87,82 +84,81 @@
     color: #00315A;
     text-decoration: underline;
 } */
+/* FIN MENU DE NAVEGACION */
 /* INICIO MENU DE NAVEGACION BOOTSTRAP*/
 .navbar {
   grid-area: navbar;
-  background-color: #FD790A !important;
+  background-color: #00315A !important;
   color: #FFFFFF;
 }
-
-.navbar-brand {
+.navbar .navbar-brand {
   color: #00315A !important;
   text-transform: uppercase;
   font-weight: bolder;
 }
-
-.navbar-brand:hover {
+.navbar .navbar-brand:hover {
   color: #FFFFFF !important;
 }
-
-.collapse {
-  background-color: #FD790A;
+.navbar .collapse {
+  background-color: #00315A;
 }
-
-.nav-link {
+.navbar .nav-link {
   text-transform: uppercase;
   font-size: 25px;
   font-weight: bolder;
   color: #FFFFFF !important;
 }
-
-.nav-link:hover {
+.navbar .nav-link:hover {
   background-color: #00315A;
   color: #FCA500 !important;
 }
-
-.navbar-toggler {
-  background-color: #00315A;
+.navbar .navbar-toggler {
+  background-color: #FD790A;
 }
 
 /* FIN DE MENU DE NAVEGACION BOOTSTRAP*/
 /* PRINCIPAL */
 .fotosPrincipales {
   grid-area: fotosPrincipales;
-  background-color: black;
+  background-color: #000000;
   margin-top: 10px;
   text-align: center;
 }
-
 .fotosPrincipales .foto1 {
   padding: 10px;
   width: 40%;
-  border: 3px solid white;
-  background-color: #00315A;
   margin: 10px;
 }
-
+.fotosPrincipales .foto1:hover {
+  border: 3px solid #00315A;
+  background-color: #00315A;
+}
 .fotosPrincipales .foto2 {
   padding: 10px;
   width: 40%;
-  border: 3px solid white;
-  background-color: #00315A;
   margin: 10px;
 }
-
+.fotosPrincipales .foto2:hover {
+  border: 3px solid #00315A;
+  background-color: #00315A;
+}
 .fotosPrincipales .foto3 {
   padding: 10px;
   width: 40%;
-  border: 3px solid white;
-  background-color: #00315A;
   margin: 10px;
 }
-
+.fotosPrincipales .foto3:hover {
+  border: 3px solid #00315A;
+  background-color: #00315A;
+}
 .fotosPrincipales .foto4 {
   padding: 10px;
   width: 40%;
-  border: 3px solid white;
-  background-color: #00315A;
   margin: 10px;
+}
+.fotosPrincipales .foto4:hover {
+  border: 3px solid #00315A;
+  background-color: #00315A;
 }
 
 /* PRINCIPAL DOS */
@@ -177,7 +173,6 @@
   border: 3px solid #FFFFFF;
   padding: 20px;
 }
-
 .masFotos h1 {
   color: yellow;
   margin-bottom: 20px;
@@ -187,28 +182,25 @@
   font-size: 40px;
   text-shadow: 0 0 10px #000000;
 }
-
 .masFotos p {
   margin-bottom: 30px;
 }
-
-#nikonBoton {
+.masFotos #nikonBoton {
   border: none;
   padding: 10px;
   background-color: yellow;
   color: black;
   border-radius: 2px;
-  border-bottom: 3px solid black;
+  border-bottom: 3px solid #000000;
   cursor: grab;
   transition: all 0.5s ease-out;
   margin-top: 5px;
   margin-bottom: 20px;
 }
-
-#nikonBoton:hover {
+.masFotos #nikonBoton:hover {
   padding: 15px;
-  background-color: black;
-  color: white;
+  background-color: #000000;
+  color: #FFFFFF;
   border-bottom: 3px solid yellow;
 }
 
@@ -229,10 +221,8 @@
   grid-area: publicidadNikon;
   text-align: center;
 }
-
-.videoNikon {
+.publicidadNikon .videoNikon {
   margin: 10px;
-  border: 10px solid #00315A;
 }
 
 /* PIE DE PAGINA */
@@ -247,8 +237,7 @@
   justify-content: center;
   align-items: center;
 }
-
-.pieDePaginaDerechos {
+.pieDePagina .pieDePaginaDerechos {
   color: var(--color2);
   margin-bottom: 10px;
   margin: 0 auto;
@@ -258,7 +247,6 @@
   font-size: 30px;
   letter-spacing: 3px;
 }
-
 .redesSociales i {
   color: #FD790A;
 }
@@ -278,7 +266,230 @@
   box-shadow: 0 0 10px green;
 }
 
+/* INICIO PAGINA FOTOS ------------------------------------------------------------------------------- INICIO PAGINA FOTOS */
+#grilla1 {
+  display: grid;
+  grid-template-areas: "header header" "navbar navbar" "fotos fotos" "publicidadNikon1 publicidadNikon1" "pieDePagina pieDePagina";
+  grid-template-columns: repeat(2fr);
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  height: 100vh;
+  margin: 0;
+}
+
+.fotos {
+  grid-area: fotos;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.fotos1 {
+  width: 800px;
+  width: 600px;
+  overflow: hidden;
+  margin: 10px;
+}
+.fotos1 .primeraFoto {
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  object-fit: cover;
+}
+.fotos1 .primeraFoto:hover {
+  transform: scale(1.2);
+}
+
+.textoFoto1 {
+  color: #FFFFFF;
+}
+.textoFoto1 span {
+  color: rgba(255, 255, 255, 0.3647058824);
+}
+
+.fotos2 {
+  width: 800px;
+  width: 600px;
+  overflow: hidden;
+  margin: 10px;
+}
+.fotos2 .segundaFoto {
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  object-fit: cover;
+}
+.fotos2 .segundaFoto:hover {
+  transform: scale(1.2);
+}
+
+.publicidadNikon1 {
+  grid-area: publicidadNikon1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* FIN PAGINA FOTOS ------------------------------------------------------------------------------- FIN PAGINA FOTOS */
+/* INICIO MEDIAS QUERIES FOTOS ------------------------------------------------------------------------------- INICIO MEDIAS QUERIES FOTOS */
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  #grilla1 {
+    grid-template-areas: "header" "navbar" "fotos" "publicidadNikon1" "pieDePagina";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  .fotos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+}
+/* FIN MEDIAS QUERIES FOTOS ------------------------------------------------------------------------------- FIN MEDIAS QUERIES FOTOS */
+/* INICIO PAGINA TIENDA ------------------------------------------------------------------------------- INICIO PAGINA TIENDA */
+.sectionTienda1 {
+  margin-top: 10px;
+  padding: 10px;
+}
+.sectionTienda1 img {
+  margin: 10px;
+  display: inline-block;
+}
+.sectionTienda1 table {
+  background-color: white;
+  margin: 10px;
+  display: inline-block;
+}
+.sectionTienda1 h2 {
+  margin: 20px;
+  color: #FFFFFF;
+  font-size: 30px;
+  display: inline-block;
+}
+
+/* SECTION 2 */
+.sectionTienda2 {
+  margin-top: 10px;
+  padding: 10px;
+}
+.sectionTienda2 img {
+  margin: 10px;
+  display: inline-block;
+}
+.sectionTienda2 table {
+  background-color: white;
+  margin: 10px;
+  display: inline-block;
+}
+.sectionTienda2 h2 {
+  margin: 20px;
+  color: #FFFFFF;
+  font-size: 30px;
+  display: inline-block;
+}
+
+/* SECTION 3 */
+.sectionTienda3 {
+  margin-top: 10px;
+  padding: 10px;
+}
+.sectionTienda3 img {
+  margin: 10px;
+  display: inline-block;
+}
+.sectionTienda3 table {
+  background-color: white;
+  margin: 10px;
+  display: inline-block;
+}
+.sectionTienda3 h2 {
+  margin: 20px;
+  color: #FFFFFF;
+  font-size: 30px;
+  display: inline-block;
+}
+
+.publicidadNikon {
+  margin-top: 10px;
+}
+
+/* FIN PAGINA TIENDA ------------------------------------------------------------------------------- FIN PAGINA TIENDA */
+/* INICIO PAGINA SOBRE MI ------------------------------------------------------------------------------- INICIO PAGINA SOBRE MI */
+.descripcion {
+  color: #FFFFFF;
+  border: 5px solid #00315A;
+  display: inline-block;
+  margin: 10px;
+}
+
+.principalSobreMi {
+  border: 5px solid #00315A;
+  display: inline-block;
+  margin: 10px;
+}
+
+/* FIN PAGINA SOBRE MI ------------------------------------------------------------------------------- FIN PAGINA SOBRE MI */
+/* INICIO PAGINA CONTACTO ------------------------------------------------------------------------------- INICIO PAGINA CONTACTO */
+/* INICIO GRILLA ------------------------------------------------------------------------------- INICIO GRILLA */
+#grilla5 {
+  display: grid;
+  grid-template-areas: "header header" "navbar navbar" "principalContacto1 principalContacto2" "principalContacto3 principalContacto3" "pieDePagina pieDePagina";
+  grid-template-columns: repeat(2fr);
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  height: 100vh;
+  margin: 0;
+}
+
 /* FIN GRILLA ------------------------------------------------------------------------------- FIN GRILLA */
+.principalContacto1 {
+  grid-area: principalContacto1;
+  color: #FFFFFF;
+  border: 5px solid #00315A;
+  background-color: #FD790A;
+  margin: 10px;
+  padding: 10px;
+}
+.principalContacto1 li {
+  list-style-type: none;
+}
+.principalContacto1 h1 {
+  text-align: center;
+}
+
+.principalContacto2 {
+  grid-area: principalContacto2;
+  color: #FFFFFF;
+  border: 5px solid #00315A;
+  background-color: #FD790A;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.principalContacto3 {
+  grid-area: principalContacto3;
+  color: #FFFFFF;
+  border: 5px solid #00315A;
+  background-color: #FD790A;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+/* FIN PAGINA CONTACTO ------------------------------------------------------------------------------- FIN PAGINA CONTACTO */
+/* INICIO MEDIAS QUERIES INDEX ------------------------------------------------------------------------------- INICIO MEDIAS QUERIES INDEX */
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  #grilla5 {
+    grid-template-areas: "header" "navbar" "principalContacto1" "principalContacto2" "principalContacto3" "pieDePagina";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+/* FIN MEDIAS QUERIES INDEX ------------------------------------------------------------------------------- FIN MEDIAS QUERIES INDEX */
 /* INICIO MEDIAS QUERIES INDEX ------------------------------------------------------------------------------- INICIO MEDIAS QUERIES INDEX */
 @media only screen and (min-width: 320px) and (max-width: 479px) {
   #grilla {
@@ -323,7 +534,7 @@
   } */
   /* PRINCIPAL */
   .fotosPrincipales {
-    background-color: var(--color3);
+    background-color: #00315A;
     margin-top: 0px;
     width: 100%;
     display: flex;
@@ -333,26 +544,34 @@
   .fotosPrincipales .foto1 {
     padding: 10px;
     width: 300px;
-    border: 5px solid var(--color5);
-    background-color: var(--color2);
+  }
+  .fotosPrincipales .foto1:hover {
+    border: 3px solid #FD790A;
+    background-color: #FD790A;
   }
   .fotosPrincipales .foto2 {
     padding: 10px;
     width: 300px;
-    border: 5px solid var(--color5);
-    background-color: var(--color2);
+  }
+  .fotosPrincipales .foto2:hover {
+    border: 3px solid #FD790A;
+    background-color: #FD790A;
   }
   .fotosPrincipales .foto3 {
     padding: 10px;
     width: 300px;
-    border: 5px solid var(--color5);
-    background-color: var(--color2);
+  }
+  .fotosPrincipales .foto3:hover {
+    border: 3px solid #FD790A;
+    background-color: #FD790A;
   }
   .fotosPrincipales .foto4 {
     padding: 10px;
     width: 300px;
-    border: 5px solid var(--color5);
-    background-color: var(--color2);
+  }
+  .fotosPrincipales .foto4:hover {
+    border: 3px solid #FD790A;
+    background-color: #FD790A;
   }
   /* PRINCIPAL DOS */
   .masFotos {
@@ -371,7 +590,6 @@
   }
   .videoNikon {
     margin: 20px;
-    border: 5px solid #00315A;
     width: 300px;
     height: 200px;
   }
@@ -441,252 +659,5 @@
   }
 }
 /* FIN MEDIAS QUERIES INDEX ------------------------------------------------------------------------------- FIN MEDIAS QUERIES INDEX */
-/* INICIO PAGINA FOTOS ------------------------------------------------------------------------------- INICIO PAGINA FOTOS */
-#grilla1 {
-  display: grid;
-  grid-template-areas: "header header" "navbar navbar" "fotos fotos" "publicidadNikon1 publicidadNikon1" "pieDePagina pieDePagina";
-  grid-template-columns: repeat(2fr);
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  height: 100vh;
-  margin: 0;
-}
-
-.fotos {
-  grid-area: fotos;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin-top: 10px;
-  padding: 10px;
-  text-align: center;
-}
-
-.fotos1 {
-  color: white;
-  margin: 10px;
-}
-
-.fotos2 {
-  color: white;
-  margin: 10px;
-}
-
-.publicidadNikon1 {
-  grid-area: publicidadNikon1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* FIN PAGINA FOTOS ------------------------------------------------------------------------------- FIN PAGINA FOTOS */
-/* INICIO MEDIAS QUERIES FOTOS ------------------------------------------------------------------------------- INICIO MEDIAS QUERIES FOTOS */
-@media only screen and (min-width: 320px) and (max-width: 479px) {
-  #grilla1 {
-    grid-template-areas: "header" "navbar" "fotos" "publicidadNikon1" "pieDePagina";
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-  }
-  .fotos {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-  }
-}
-/* FIN MEDIAS QUERIES FOTOS ------------------------------------------------------------------------------- FIN MEDIAS QUERIES FOTOS */
-/* INICIO PAGINA TIENDA ------------------------------------------------------------------------------- INICIO PAGINA TIENDA */
-/* MENU DE NAVEGACION */
-.menu {
-  grid-area: menu;
-  background-color: #FD790A;
-  padding: 5px;
-  text-align: center;
-}
-
-.menu li {
-  display: inline-block;
-  text-transform: uppercase;
-  width: 15%;
-  font-size: 25px;
-}
-
-.menu li a {
-  text-decoration: none;
-  color: white;
-}
-
-.menu li a:hover {
-  color: #00315A;
-}
-
-/* FIN MENU DE NAVEGACION */
-.sectionTienda1 {
-  margin-top: 10px;
-  padding: 10px;
-}
-
-.sectionTienda1 img {
-  margin: 10px;
-  display: inline-block;
-}
-
-.sectionTienda1 table {
-  background-color: white;
-  margin: 10px;
-  display: inline-block;
-}
-
-.sectionTienda1 h2 {
-  margin: 20px;
-  color: #FFFFFF;
-  font-size: 30px;
-  display: inline-block;
-}
-
-/* SECTION 2 */
-.sectionTienda2 {
-  margin-top: 10px;
-  padding: 10px;
-}
-
-.sectionTienda2 img {
-  margin: 10px;
-  display: inline-block;
-}
-
-.sectionTienda2 table {
-  background-color: white;
-  margin: 10px;
-  display: inline-block;
-}
-
-.sectionTienda2 h2 {
-  margin: 20px;
-  color: #FFFFFF;
-  font-size: 30px;
-  display: inline-block;
-}
-
-/* SECTION 3 */
-.sectionTienda3 {
-  margin-top: 10px;
-  padding: 10px;
-}
-
-.sectionTienda3 img {
-  margin: 10px;
-  display: inline-block;
-}
-
-.sectionTienda3 table {
-  background-color: white;
-  margin: 10px;
-  display: inline-block;
-}
-
-.sectionTienda3 h2 {
-  margin: 20px;
-  color: #FFFFFF;
-  font-size: 30px;
-  display: inline-block;
-}
-
-.publicidadNikon {
-  margin-top: 10px;
-}
-
-/* FIN PAGINA TIENDA ------------------------------------------------------------------------------- FIN PAGINA TIENDA */
-/* INICIO PAGINA CONTACTO ------------------------------------------------------------------------------- INICIO PAGINA CONTACTO */
-/* MENU DE NAVEGACION */
-.menu {
-  grid-area: menu;
-  background-color: #FD790A;
-  padding: 5px;
-  text-align: center;
-}
-
-.menu li {
-  display: inline-block;
-  text-transform: uppercase;
-  width: 15%;
-  font-size: 25px;
-}
-
-.menu li a {
-  text-decoration: none;
-  color: white;
-}
-
-.menu li a:hover {
-  color: #00315A;
-}
-
-/* FIN MENU DE NAVEGACION */
-.principalContacto1 {
-  color: #FFFFFF;
-  border: 5px solid #00315A;
-  background-color: #FD790A;
-  display: inline-block;
-}
-
-.principalContacto2 {
-  color: #FFFFFF;
-  border: 5px solid #00315A;
-  background-color: #FD790A;
-  display: inline-block;
-  margin: 10px;
-}
-
-.principalContacto3 {
-  color: #FFFFFF;
-  border: 5px solid #00315A;
-  background-color: #FD790A;
-  display: inline-block;
-  margin: 10px;
-}
-
-/* FIN PAGINA CONTACTO ------------------------------------------------------------------------------- FIN PAGINA CONTACTO */
-/* INICIO PAGINA SOBRE MI ------------------------------------------------------------------------------- INICIO PAGINA SOBRE MI */
-/* MENU DE NAVEGACION */
-.menu {
-  grid-area: menu;
-  background-color: #FD790A;
-  padding: 5px;
-  text-align: center;
-}
-
-.menu li {
-  display: inline-block;
-  text-transform: uppercase;
-  width: 15%;
-  font-size: 25px;
-}
-
-.menu li a {
-  text-decoration: none;
-  color: white;
-}
-
-.menu li a:hover {
-  color: #00315A;
-}
-
-/* FIN MENU DE NAVEGACION */
-.descripcion {
-  color: #FFFFFF;
-  border: 5px solid #00315A;
-  display: inline-block;
-  margin: 10px;
-}
-
-.principalSobreMi {
-  border: 5px solid #00315A;
-  display: inline-block;
-  margin: 10px;
-}
-
-/* FIN PAGINA SOBRE MI ------------------------------------------------------------------------------- FIN PAGINA SOBRE MI */
 
 /*# sourceMappingURL=estilos.css.map */

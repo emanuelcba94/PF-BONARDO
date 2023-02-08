@@ -1,0 +1,70 @@
+/* INICIO PAGINA CONTACTO ------------------------------------------------------------------------------- INICIO PAGINA CONTACTO */
+
+/* INICIO GRILLA ------------------------------------------------------------------------------- INICIO GRILLA */
+#grilla5 {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "navbar navbar"
+        "principalContacto1 principalContacto2"
+        "principalContacto3 principalContacto3"
+        "pieDePagina pieDePagina";
+    grid-template-columns: repeat(2fr);
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    height: 100vh;
+    margin: 0;
+}
+/* FIN GRILLA ------------------------------------------------------------------------------- FIN GRILLA */
+
+.principalContacto1 {
+    grid-area: principalContacto1;
+    color: #FFFFFF;
+    border: 5px solid #00315A;
+    background-color: #FD790A;
+    margin: 10px;
+    padding: 10px;
+
+    li {
+        list-style-type: none;
+    }
+
+    h1 {
+        text-align: center;
+    }
+}
+
+.principalContacto2 {
+    grid-area: principalContacto2;
+    color: #FFFFFF;
+    border: 5px solid #00315A;
+    background-color: #FD790A;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.principalContacto3 {
+    grid-area: principalContacto3;
+    color: #FFFFFF;
+    border: 5px solid #00315A;
+    background-color: #FD790A;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+/* FIN PAGINA CONTACTO ------------------------------------------------------------------------------- FIN PAGINA CONTACTO */
+
+/* INICIO MEDIAS QUERIES INDEX ------------------------------------------------------------------------------- INICIO MEDIAS QUERIES INDEX */
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+    #grilla5 {
+        grid-template-areas: "header"
+            "navbar"
+            "principalContacto1"
+            "principalContacto2"
+            "principalContacto3"
+            "pieDePagina";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+}
+/* FIN MEDIAS QUERIES INDEX ------------------------------------------------------------------------------- FIN MEDIAS QUERIES INDEX */

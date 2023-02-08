@@ -21,6 +21,7 @@
 </head>
 
 <body class="fondoGeneral">
+    <div id="grilla5">
     <!-- CABECERA -->
     <header class="header">
         <a href="../index.html"><img class="headerLogo" src="../images/logo.png"></a>
@@ -38,7 +39,7 @@
     </nav> -->
     <nav class="navbar navbar-expand-md bg-dark navbar-dark">
         <!-- Brand -->
-        <a class="navbar-brand" href="#">Navegador</a>
+        <a class="navbar-brand" href="#"></a>
 
         <!-- Toggler/collapsibe Button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -46,13 +47,22 @@
         </button>
 
         <!-- Navbar links -->
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link" href="../index.html">Inicio</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="../pages/fotos.html">Fotos</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        Ciudades
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Córdoba</a>
+                        <a class="dropdown-item" href="#">Buenos Aires</a>
+                    </div>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="../pages/tienda.html">Tienda</a>
@@ -68,7 +78,7 @@
     </nav>
     <!-- PRINCIPAL -->
     <section class="principalContacto1">
-        <h2>Contacto</h2>
+        <h1>Contacto</h1>
         <ul>
             <li>E-mail: emanuel@outlook.com</li>
             <li>Tel: 0888-0808-0808</li>
@@ -76,7 +86,7 @@
     </section>
     <!-- UBICACION -->
     <section class="principalContacto2">
-        <h3>Ubicación</h3>
+        <h2>Ubicación</h2>
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108977.0603892044!2d-64.26438435500386!3d-31.39943416227947!2m3!1f0!2f0!3f0!
             3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432985f478f5b69%3A0xb0a24f9a5366b092!2sC%C3%B3rdoba%2C%20Argentina!5e0!3m2!1ses-419!2sus!4v1659902972896!5m2!1ses-419!2sus"
@@ -85,7 +95,7 @@
     </section>
     <section class="principalContacto3">
         <!-- FORMULARIO -->
-        <h4>Formulario</h4>
+        <h3>Formulario</h3>
         <form>
             <fieldset>
                 <legend>Datos Personales</legend>
@@ -124,7 +134,6 @@
             </fieldset>
         </form>
     </section>
-    <br />
     <!-- PIE DE PAGINA -->
     <footer class="pieDePagina">
         <p class="pieDePaginaDerechos">©2022 por Emanuel Bonardo. Fotógrafo Argentino</p>
@@ -133,6 +142,7 @@
             <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
         </div>
     </footer>
+    </div>
     <!-- ICONO WHATSAPP -->
     <div class="icono"><a href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></div></a>
     <!-- LINK BOOTSTRAP -->

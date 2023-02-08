@@ -1,39 +1,52 @@
 /* PRINCIPAL */
+
 .fotosPrincipales {
     grid-area: fotosPrincipales;
-    background-color: black;
+    background-color: #000000;
     margin-top: 10px;
     text-align: center;
-}
 
-.fotosPrincipales .foto1 {
-    padding: 10px;
-    width: 40%;
-    border: 3px solid white;
-    background-color: #00315A;
-    margin: 10px;
-}
+    .foto1 {
+        padding: 10px;
+        width: 40%;
+        margin: 10px;
 
-.fotosPrincipales .foto2 {
-    padding: 10px;
-    width: 40%;
-    border: 3px solid white;
-    background-color: #00315A;
-    margin: 10px;
-}
+        &:hover {
+            border: 3px solid #00315A;
+            background-color: #00315A;
+        }
+    }
 
-.fotosPrincipales .foto3 {
-    padding: 10px;
-    width: 40%;
-    border: 3px solid white;
-    background-color: #00315A;
-    margin: 10px;
-}
+    .foto2 {
+        padding: 10px;
+        width: 40%;
+        margin: 10px;
 
-.fotosPrincipales .foto4 {
-    padding: 10px;
-    width: 40%;
-    border: 3px solid white;
-    background-color: #00315A;
-    margin: 10px;
+        &:hover {
+            border: 3px solid #00315A;
+            background-color: #00315A;
+        }
+    }
+
+    .foto3 {
+        padding: 10px;
+        width: 40%;
+        margin: 10px;
+
+        &:hover {
+            border: 3px solid #00315A;
+            background-color: #00315A;
+        }
+    }
+
+    .foto4 {
+        padding: 10px;
+        width: 40%;
+        margin: 10px;
+
+        &:hover {
+            border: 3px solid #00315A;
+            background-color: #00315A;
+        }
+    }
 }

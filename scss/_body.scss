@@ -1,0 +1,45 @@
+:root {
+    --color1: #FD790A;
+    --color2: #FFFFFF;
+    --color3: #00315A;
+    --color4: #FCA500;
+    --color5: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* TIPOGRAFIA */
+* {
+    font-family: OpenSans;
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url(../fonts/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+
+/* BODY ------------------------------------------------------------------------------- BODY */
+.fondoGeneral {
+    background-color: $b-color5;
+}
+
+/* INICIO GRILLA ------------------------------------------------------------------------------- INICIO GRILLA */
+#grilla {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "navbar navbar"
+        "fotosPrincipales fotosPrincipales"
+        "publicidadNikon publicidadNikon"
+        "masFotos masFotos"
+        "pieDePagina pieDePagina";
+    grid-template-columns: repeat(2fr);
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    height: 100vh;
+    margin: 0;
+}
+/* FIN GRILLA ------------------------------------------------------------------------------- FIN GRILLA */
