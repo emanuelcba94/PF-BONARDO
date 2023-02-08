@@ -181,11 +181,12 @@
   color: #FFFFFF;
   width: 50%;
   background-color: #00315A;
-  border: 3px solid #FFFFFF;
+  border: 3px solid #FFE100;
   padding: 20px;
+  margin-bottom: 10px;
 }
 .masFotos h1 {
-  color: yellow;
+  color: #FFE100;
   margin-bottom: 20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bolder;
@@ -199,7 +200,7 @@
 .masFotos #nikonBoton {
   border: none;
   padding: 10px;
-  background-color: yellow;
+  background-color: #FFE100;
   color: black;
   border-radius: 2px;
   border-bottom: 3px solid #000000;
@@ -212,7 +213,7 @@
   padding: 15px;
   background-color: #000000;
   color: #FFFFFF;
-  border-bottom: 3px solid yellow;
+  border-bottom: 3px solid #FFE100;
 }
 
 /* .masFotos a {
@@ -234,6 +235,10 @@
 }
 .publicidadNikon .videoNikon {
   margin: 10px;
+  border: 10px solid #FFE100;
+}
+.publicidadNikon .videoNikon:hover {
+  border: 5px solid #FFE100;
 }
 
 /* PIE DE PAGINA */
@@ -290,7 +295,7 @@
 .fotos {
   grid-area: fotos;
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   margin-top: 10px;
@@ -337,11 +342,51 @@
   transform: scale(1.2);
 }
 
+.fotos3 {
+  width: 800px;
+  width: 600px;
+  overflow: hidden;
+  margin: 10px;
+}
+.fotos3 .tercerFoto {
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  object-fit: cover;
+}
+.fotos3 .tercerFoto:hover {
+  transform: scale(1.2);
+}
+
+.fotos4 {
+  width: 800px;
+  width: 600px;
+  overflow: hidden;
+  margin: 10px;
+}
+.fotos4 .cuartaFoto {
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  object-fit: cover;
+}
+.fotos4 .cuartaFoto:hover {
+  transform: scale(1.2);
+}
+
 .publicidadNikon1 {
   grid-area: publicidadNikon1;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 10px;
+}
+.publicidadNikon1 .videoNikon {
+  margin: 10px;
+  border: 10px solid #FFE100;
+}
+.publicidadNikon1 .videoNikon:hover {
+  border: 5px solid #FFE100;
 }
 
 /* FIN PAGINA FOTOS ------------------------------------------------------------------------------- FIN PAGINA FOTOS */
@@ -509,7 +554,7 @@
     grid-template-rows: 1fr;
   }
   .fondoGeneral {
-    background-color: var(--color3);
+    background-color: var(--color5);
   }
   /* CABECERA */
   .header {
@@ -545,7 +590,7 @@
   } */
   /* PRINCIPAL */
   .fotosPrincipales {
-    background-color: #00315A;
+    background-color: #000000;
     margin-top: 0px;
     width: 100%;
     display: flex;
@@ -596,9 +641,6 @@
     font-size: 45px;
   }
   /* PUBLICIDAD */
-  .publicidadNikon {
-    background-color: #FD790A;
-  }
   .videoNikon {
     margin: 20px;
     width: 300px;

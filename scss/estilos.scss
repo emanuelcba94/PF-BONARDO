@@ -1,22 +1,15 @@
 @import 'variables/variables';
-@import 'body';
-@import 'header';
-@import 'nav';
-@import 'main1';
-@import 'main2';
-@import 'aside';
-@import 'footer';
+@import 'index/body';
+@import 'index/header';
+@import 'index/nav';
+@import 'index/main1';
+@import 'index/main2';
+@import 'index/aside';
+@import 'index/footer';
 @import 'fotos/fotos';
 @import 'tienda/tienda';
 @import 'sobremi/sobremi';
 @import 'contacto/contacto';
-
-
-
-
-
-
-
 
 
 
@@ -34,7 +27,7 @@
     }
 
     .fondoGeneral {
-        background-color: var(--color3);
+        background-color: var(--color5);
     }
 
     /* CABECERA */
@@ -75,7 +68,7 @@
 
     /* PRINCIPAL */
     .fotosPrincipales {
-        background-color: #00315A;
+        background-color: #000000;
         margin-top: 0px;
         width: 100%;
         display: flex;
@@ -137,10 +130,6 @@
     }
 
     /* PUBLICIDAD */
-    .publicidadNikon {
-        background-color: #FD790A;
-    }
-
     .videoNikon {
         margin: 20px;
         // border: 5px solid #00315A;

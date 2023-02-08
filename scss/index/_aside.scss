@@ -6,7 +6,11 @@
 
     .videoNikon {
         margin: 10px;
-        // border: 10px solid #00315A;
+        border: 10px solid #FFE100;
+
+        &:hover {
+            border: 5px solid #FFE100;
+        }
     }
 }
 
