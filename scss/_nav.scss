@@ -60,5 +60,20 @@
     .navbar-toggler {
         background-color: #FD790A;
     }
+
+    .dropdown-menu {
+        background-color: #00315A;
+
+        .dropdown-item {
+            color: #FFFFFF;
+            font-weight: bolder;
+            text-transform: uppercase;
+
+            &:hover {
+                background-color: #FCA500;
+            }
+        }
+        
+    }
 }
 /* FIN DE MENU DE NAVEGACION BOOTSTRAP*/
