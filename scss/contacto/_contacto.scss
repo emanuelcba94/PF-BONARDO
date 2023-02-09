@@ -5,7 +5,7 @@
         "header header"
         "navbar navbar"
         "principalContacto1 principalContacto2"
-        "principalContacto3 principalContacto3"
+        "principalContacto3 publicidadNikon1"
         "pieDePagina pieDePagina";
     grid-template-columns: repeat(2fr);
     grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -17,8 +17,9 @@
 .principalContacto1 {
     grid-area: principalContacto1;
     color: #FFFFFF;
-    border: 5px solid #00315A;
-    background-color: #FD790A;
+    // border: 5px solid #FD790A;
+    background-color: #00315A;
+    border-radius: 5px;
     margin: 10px;
     padding: 10px;
 
@@ -28,27 +29,63 @@
 
     h1 {
         text-align: center;
+        background-color: #FD790A;
+        border-radius: 5px;
     }
 }
 
 .principalContacto2 {
     grid-area: principalContacto2;
     color: #FFFFFF;
-    border: 5px solid #00315A;
-    background-color: #FD790A;
+    // border: 5px solid #FD790A;
+    background-color: #00315A;
+    border-radius: 5px;
     margin: 10px;
     padding: 10px;
     text-align: center;
+
+    h2 {
+        font-size: 40px;
+        background-color: #FD790A;
+        border-radius: 5px;
+    }
 }
 
 .principalContacto3 {
     grid-area: principalContacto3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     color: #FFFFFF;
-    border: 5px solid #00315A;
-    background-color: #FD790A;
+    // border: 5px solid #FD790A;
+    background-color: #00315A;
+    border-radius: 5px;
     margin: 10px;
     padding: 10px;
     text-align: center;
+
+    h3 {
+        font-size: 40px;
+        background-color: #FD790A;
+        border-radius: 5px;
+    }
+}
+
+.publicidadNikon1 {
+    grid-area: publicidadNikon1;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    .videoNikon {
+        margin: 10px;
+        border: 10px solid #FFE100;
+        align-self: center;
+
+        &:hover {
+            border: 5px solid #FFE100;
+        }
+    }
 }
 
 /* INICIO MEDIAS QUERIES INDEX ------------------------------------------------------------------------------- INICIO MEDIAS QUERIES INDEX */
@@ -59,9 +96,17 @@
             "principalContacto1"
             "principalContacto2"
             "principalContacto3"
+            "publicidadNikon1"
             "pieDePagina";
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
+    }
+
+    .principalContacto2 {
+        .mapa {
+            width: 270px;
+            height: 200px;
+        }
     }
 }
 /* FIN MEDIAS QUERIES INDEX ------------------------------------------------------------------------------- FIN MEDIAS QUERIES INDEX */

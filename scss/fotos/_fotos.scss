@@ -5,7 +5,6 @@
         "header header"
         "navbar navbar"
         "fotos fotos"
-        "publicidadNikon1 publicidadNikon1"
         "pieDePagina pieDePagina";
     grid-template-columns: repeat(2fr);
     grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -98,23 +97,6 @@
 
         &:hover {
             transform: scale(1.2);
-        }
-    }
-}
-
-.publicidadNikon1 {
-    grid-area: publicidadNikon1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10px;
-
-    .videoNikon {
-        margin: 10px;
-        border: 10px solid #FFE100;
-
-        &:hover {
-            border: 5px solid #FFE100;
         }
     }
 }
