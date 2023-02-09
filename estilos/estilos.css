@@ -282,7 +282,7 @@
   box-shadow: 0 0 10px green;
 }
 
-/* INICIO PAGINA FOTOS ------------------------------------------------------------------------------- INICIO PAGINA FOTOS */
+/* INICIO GRILLA ------------------------------------------------------------------------------- INICIO GRILLA */
 #grilla1 {
   display: grid;
   grid-template-areas: "header header" "navbar navbar" "fotos fotos" "publicidadNikon1 publicidadNikon1" "pieDePagina pieDePagina";
@@ -292,6 +292,7 @@
   margin: 0;
 }
 
+/* FIN GRILLA ------------------------------------------------------------------------------- FIN GRILLA */
 .fotos {
   grid-area: fotos;
   display: flex;
@@ -304,7 +305,6 @@
 }
 
 .fotos1 {
-  width: 800px;
   width: 600px;
   overflow: hidden;
   margin: 10px;
@@ -327,7 +327,6 @@
 }
 
 .fotos2 {
-  width: 800px;
   width: 600px;
   overflow: hidden;
   margin: 10px;
@@ -343,7 +342,6 @@
 }
 
 .fotos3 {
-  width: 800px;
   width: 600px;
   overflow: hidden;
   margin: 10px;
@@ -359,7 +357,6 @@
 }
 
 .fotos4 {
-  width: 800px;
   width: 600px;
   overflow: hidden;
   margin: 10px;
@@ -389,7 +386,6 @@
   border: 5px solid #FFE100;
 }
 
-/* FIN PAGINA FOTOS ------------------------------------------------------------------------------- FIN PAGINA FOTOS */
 /* INICIO MEDIAS QUERIES FOTOS ------------------------------------------------------------------------------- INICIO MEDIAS QUERIES FOTOS */
 @media only screen and (min-width: 320px) and (max-width: 479px) {
   #grilla1 {
@@ -400,13 +396,26 @@
   .fotos {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
+  }
+  .fotos1 {
+    width: 300px;
+    margin: 0;
+  }
+  .fotos2 {
+    width: 300px;
+    margin: 0;
+  }
+  .fotos3 {
+    width: 300px;
+    margin: 0;
+  }
+  .fotos4 {
+    width: 300px;
+    margin: 0;
   }
 }
 /* FIN MEDIAS QUERIES FOTOS ------------------------------------------------------------------------------- FIN MEDIAS QUERIES FOTOS */
-/* INICIO PAGINA TIENDA ------------------------------------------------------------------------------- INICIO PAGINA TIENDA */
+/* SECTION 1 */
 .sectionTienda1 {
   margin-top: 10px;
   padding: 10px;
@@ -469,27 +478,86 @@
   display: inline-block;
 }
 
-.publicidadNikon {
-  margin-top: 10px;
+/* INICIO GRILLA ------------------------------------------------------------------------------- INICIO GRILLA */
+#grilla4 {
+  display: grid;
+  grid-template-areas: "header header" "navbar navbar" "descripcion principalSobreMi" "pieDePagina pieDePagina";
+  grid-template-columns: repeat(2fr);
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  height: 100vh;
+  margin: 0;
 }
 
-/* FIN PAGINA TIENDA ------------------------------------------------------------------------------- FIN PAGINA TIENDA */
-/* INICIO PAGINA SOBRE MI ------------------------------------------------------------------------------- INICIO PAGINA SOBRE MI */
+/* FIN GRILLA ------------------------------------------------------------------------------- FIN GRILLA */
 .descripcion {
+  grid-area: descripcion;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
   color: #FFFFFF;
-  border: 5px solid #00315A;
-  display: inline-block;
+  height: 700px;
   margin: 10px;
+}
+.descripcion h1 {
+  color: #FFFFFF;
+  cursor: pointer;
+}
+.descripcion h1:hover {
+  color: #FCA500;
 }
 
 .principalSobreMi {
-  border: 5px solid #00315A;
-  display: inline-block;
+  grid-area: principalSobreMi;
+  display: flex;
+  justify-content: center;
+  align-content: center;
   margin: 10px;
 }
+.principalSobreMi .fotoSobreMi1 {
+  border: 5px solid #FFFFFF;
+  margin: 10px;
+  align-self: center;
+  width: 400px;
+  height: 600px;
+}
+.principalSobreMi .fotoSobreMi2 {
+  border: 5px solid #FFFFFF;
+  align-self: center;
+  margin: 10px;
+  width: 400px;
+  height: 600px;
+}
 
-/* FIN PAGINA SOBRE MI ------------------------------------------------------------------------------- FIN PAGINA SOBRE MI */
-/* INICIO PAGINA CONTACTO ------------------------------------------------------------------------------- INICIO PAGINA CONTACTO */
+/* INICIO MEDIAS QUERIES SOBRE MI ------------------------------------------------------------------------------- INICIO MEDIAS QUERIES SOBRE MI */
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  #grilla4 {
+    grid-template-areas: "header" "navbar" "fotosPrincipales" "descripcion" "principalSobreMi" "pieDePagina";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  .principalSobreMi {
+    grid-area: principalSobreMi;
+    display: flex;
+    flex-direction: column;
+  }
+  .principalSobreMi .fotoSobreMi1 {
+    width: 250px;
+    height: 360px;
+  }
+  .principalSobreMi .fotoSobreMi2 {
+    width: 250px;
+    height: 360px;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  #grilla4 {
+    grid-template-areas: "header" "navbar" "fotosPrincipales" "descripcion" "principalSobreMi" "pieDePagina";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+/* FIN MEDIAS QUERIES SOBRE MI ------------------------------------------------------------------------------- FIN MEDIAS QUERIES SOBRE MI */
 /* INICIO GRILLA ------------------------------------------------------------------------------- INICIO GRILLA */
 #grilla5 {
   display: grid;
@@ -536,7 +604,6 @@
   text-align: center;
 }
 
-/* FIN PAGINA CONTACTO ------------------------------------------------------------------------------- FIN PAGINA CONTACTO */
 /* INICIO MEDIAS QUERIES INDEX ------------------------------------------------------------------------------- INICIO MEDIAS QUERIES INDEX */
 @media only screen and (min-width: 320px) and (max-width: 479px) {
   #grilla5 {

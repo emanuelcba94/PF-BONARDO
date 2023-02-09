@@ -1,5 +1,4 @@
-/* INICIO PAGINA FOTOS ------------------------------------------------------------------------------- INICIO PAGINA FOTOS */
-
+/* INICIO GRILLA ------------------------------------------------------------------------------- INICIO GRILLA */
 #grilla1 {
     display: grid;
     grid-template-areas:
@@ -14,6 +13,8 @@
     margin: 0;
 }
 
+/* FIN GRILLA ------------------------------------------------------------------------------- FIN GRILLA */
+
 .fotos {
     grid-area: fotos;
     display: flex;
@@ -26,7 +27,6 @@
 }
 
 .fotos1 {
-    width: 800px;
     width: 600px;
     overflow: hidden;
     margin: 10px;
@@ -41,7 +41,6 @@
             transform: scale(1.2);
         }
     }
-
 }
 
 .textoFoto1 {
@@ -53,7 +52,6 @@
 }
 
 .fotos2 {
-    width: 800px;
     width: 600px;
     overflow: hidden;
     margin: 10px;
@@ -71,7 +69,6 @@
 }
 
 .fotos3 {
-    width: 800px;
     width: 600px;
     overflow: hidden;
     margin: 10px;
@@ -89,7 +86,6 @@
 }
 
 .fotos4 {
-    width: 800px;
     width: 600px;
     overflow: hidden;
     margin: 10px;
@@ -123,8 +119,6 @@
     }
 }
 
-/* FIN PAGINA FOTOS ------------------------------------------------------------------------------- FIN PAGINA FOTOS */
-
 /* INICIO MEDIAS QUERIES FOTOS ------------------------------------------------------------------------------- INICIO MEDIAS QUERIES FOTOS */
 @media only screen and (min-width: 320px) and (max-width: 479px) {
     #grilla1 {
@@ -141,9 +135,26 @@
     .fotos {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        text-align: center;
+    }
+
+    .fotos1 {
+        width: 300px;
+        margin: 0;
+    }
+
+    .fotos2 {
+        width: 300px;
+        margin: 0;
+    }
+
+    .fotos3 {
+        width: 300px;
+        margin: 0;
+    }
+
+    .fotos4 {
+        width: 300px;
+        margin: 0;
     }
 }
 

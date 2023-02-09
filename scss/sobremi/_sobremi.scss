@@ -1,16 +1,105 @@
-/* INICIO PAGINA SOBRE MI ------------------------------------------------------------------------------- INICIO PAGINA SOBRE MI */
+/* INICIO GRILLA ------------------------------------------------------------------------------- INICIO GRILLA */
+#grilla4 {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "navbar navbar"
+        "descripcion principalSobreMi"
+        "pieDePagina pieDePagina";
+    grid-template-columns: repeat(2fr);
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    height: 100vh;
+    margin: 0;
+}
+/* FIN GRILLA ------------------------------------------------------------------------------- FIN GRILLA */
 
 .descripcion {
+    grid-area: descripcion;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    // border: 5px solid #00315A;
     color: #FFFFFF;
-    border: 5px solid #00315A;
-    display: inline-block;
+    height: 700px;
     margin: 10px;
+
+    h1 {
+        color: #FFFFFF;
+
+        &:hover{
+            color: #FCA500;
+        }
+
+        cursor: pointer;
+    }
 }
 
 .principalSobreMi {
-    border: 5px solid #00315A;
-    display: inline-block;
+    grid-area: principalSobreMi;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    // border: 5px solid #00315A;
     margin: 10px;
+
+    .fotoSobreMi1 {
+        border: 5px solid #FFFFFF;
+        margin: 10px;
+        align-self: center;
+        width: 400px;
+        height: 600px;
+    }
+
+    .fotoSobreMi2 {
+        border: 5px solid #FFFFFF;
+        align-self: center;
+        margin: 10px;
+        width: 400px;
+        height: 600px;
+    }
 }
 
-/* FIN PAGINA SOBRE MI ------------------------------------------------------------------------------- FIN PAGINA SOBRE MI */
+/* INICIO MEDIAS QUERIES SOBRE MI ------------------------------------------------------------------------------- INICIO MEDIAS QUERIES SOBRE MI */
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+    #grilla4 {
+        grid-template-areas: "header"
+            "navbar"
+            "fotosPrincipales"
+            "descripcion"
+            "principalSobreMi"
+            "pieDePagina";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .principalSobreMi {
+        grid-area: principalSobreMi;
+        display: flex;
+        flex-direction: column;
+
+        .fotoSobreMi1 {
+            width: 250px;
+            height: 360px;
+        }
+    
+        .fotoSobreMi2 {
+            width: 250px;
+            height: 360px;
+        }
+    }
+}    
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    #grilla4 {
+        grid-template-areas: "header"
+            "navbar"
+            "fotosPrincipales"
+            "descripcion"
+            "principalSobreMi"
+            "pieDePagina";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+}    
+/* FIN MEDIAS QUERIES SOBRE MI ------------------------------------------------------------------------------- FIN MEDIAS QUERIES SOBRE MI */
