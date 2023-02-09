@@ -400,69 +400,171 @@
   }
 }
 /* FIN MEDIAS QUERIES FOTOS ------------------------------------------------------------------------------- FIN MEDIAS QUERIES FOTOS */
+/* INICIO GRILLA ------------------------------------------------------------------------------- INICIO GRILLA */
+#grilla3 {
+  display: grid;
+  grid-template-areas: "header header" "navbar navbar" "sectionTienda1 sectionTienda2" "sectionTienda3 sectionTienda3" "pieDePagina pieDePagina";
+  grid-template-columns: repeat(2fr);
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  height: 100vh;
+  margin: 0;
+}
+
+/* FIN GRILLA ------------------------------------------------------------------------------- FIN GRILLA */
 /* SECTION 1 */
 .sectionTienda1 {
+  grid-area: sectionTienda1;
   margin-top: 10px;
+  margin: 10px;
   padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: #00315A;
+  border-radius: 5px;
 }
 .sectionTienda1 img {
   margin: 10px;
-  display: inline-block;
+  align-self: center;
+  border: 5px solid #FFFFFF;
 }
 .sectionTienda1 table {
   background-color: white;
   margin: 10px;
-  display: inline-block;
+  align-self: center;
 }
 .sectionTienda1 h2 {
   margin: 20px;
   color: #FFFFFF;
-  font-size: 30px;
-  display: inline-block;
+  font-size: 20px;
+  align-self: center;
+}
+.sectionTienda1 h2:hover {
+  color: #FD790A;
+  cursor: pointer;
 }
 
 /* SECTION 2 */
 .sectionTienda2 {
+  grid-area: sectionTienda2;
   margin-top: 10px;
+  margin: 10px;
   padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: #00315A;
+  border-radius: 5px;
 }
 .sectionTienda2 img {
   margin: 10px;
-  display: inline-block;
+  align-self: center;
+  border: 5px solid #FFFFFF;
 }
 .sectionTienda2 table {
   background-color: white;
   margin: 10px;
-  display: inline-block;
+  align-self: center;
 }
 .sectionTienda2 h2 {
   margin: 20px;
   color: #FFFFFF;
-  font-size: 30px;
-  display: inline-block;
+  font-size: 20px;
+  align-self: center;
+}
+.sectionTienda2 h2:hover {
+  color: #FD790A;
+  cursor: pointer;
 }
 
 /* SECTION 3 */
 .sectionTienda3 {
+  grid-area: sectionTienda3;
   margin-top: 10px;
+  margin: 10px;
   padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: #00315A;
+  border-radius: 5px;
 }
 .sectionTienda3 img {
   margin: 10px;
-  display: inline-block;
+  align-self: center;
+  border: 5px solid #FFFFFF;
 }
 .sectionTienda3 table {
   background-color: white;
   margin: 10px;
-  display: inline-block;
+  align-self: center;
 }
 .sectionTienda3 h2 {
   margin: 20px;
   color: #FFFFFF;
-  font-size: 30px;
-  display: inline-block;
+  font-size: 20px;
+  align-self: center;
+}
+.sectionTienda3 h2:hover {
+  color: #FD790A;
+  cursor: pointer;
 }
 
+/* INICIO MEDIAS QUERIES TIENDA ------------------------------------------------------------------------------- INICIO MEDIAS TIENDA */
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  #grilla3 {
+    grid-template-areas: "header" "navbar" "sectionTienda1" "sectionTienda2" "sectionTienda3" "pieDePagina";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  .sectionTienda1 {
+    grid-area: sectionTienda1;
+    display: flex;
+    flex-direction: column;
+  }
+  .sectionTienda1 img {
+    width: 260px;
+  }
+  .sectionTienda2 {
+    grid-area: sectionTienda2;
+    display: flex;
+    flex-direction: column;
+  }
+  .sectionTienda2 img {
+    width: 260px;
+  }
+  .sectionTienda3 {
+    grid-area: sectionTienda3;
+    display: flex;
+    flex-direction: column;
+  }
+  .sectionTienda3 img {
+    width: 260px;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  #grilla3 {
+    grid-template-areas: "header" "navbar" "sectionTienda1" "sectionTienda2" "sectionTienda3" "pieDePagina";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  .sectionTienda1 {
+    grid-area: sectionTienda1;
+    display: flex;
+    flex-direction: column;
+  }
+  .sectionTienda2 {
+    grid-area: sectionTienda2;
+    display: flex;
+    flex-direction: column;
+  }
+  .sectionTienda3 {
+    grid-area: sectionTienda3;
+    display: flex;
+    flex-direction: column;
+  }
+}
+/* FIN MEDIAS QUERIES TIENDA ------------------------------------------------------------------------------- FIN MEDIAS QUERIES TIENDA */
 /* INICIO GRILLA ------------------------------------------------------------------------------- INICIO GRILLA */
 #grilla4 {
   display: grid;
