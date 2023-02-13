@@ -137,43 +137,15 @@
   margin-top: 10px;
   text-align: center;
 }
-.fotosPrincipales .foto1 {
+.fotosPrincipales .foto1, .fotosPrincipales .foto4, .fotosPrincipales .foto3, .fotosPrincipales .foto2 {
   padding: 10px;
   width: 40%;
   margin: 10px;
 }
-.fotosPrincipales .foto1:hover {
+.fotosPrincipales .foto1:hover, .fotosPrincipales .foto4:hover, .fotosPrincipales .foto3:hover, .fotosPrincipales .foto2:hover {
   border: 3px solid #00315A;
   background-color: #00315A;
 }
-.fotosPrincipales .foto2 {
-  padding: 10px;
-  width: 40%;
-  margin: 10px;
-}
-.fotosPrincipales .foto2:hover {
-  border: 3px solid #00315A;
-  background-color: #00315A;
-}
-.fotosPrincipales .foto3 {
-  padding: 10px;
-  width: 40%;
-  margin: 10px;
-}
-.fotosPrincipales .foto3:hover {
-  border: 3px solid #00315A;
-  background-color: #00315A;
-}
-.fotosPrincipales .foto4 {
-  padding: 10px;
-  width: 40%;
-  margin: 10px;
-}
-.fotosPrincipales .foto4:hover {
-  border: 3px solid #00315A;
-  background-color: #00315A;
-}
-
 /* PRINCIPAL DOS */
 .masFotos {
   grid-area: masFotos;
@@ -798,11 +770,11 @@
     flex-direction: column;
     align-items: center;
   }
-  .fotosPrincipales .foto1 {
+  .fotosPrincipales .foto1, .fotosPrincipales .foto2, .fotosPrincipales .foto3, .fotosPrincipales .foto4 {
     padding: 10px;
     width: 300px;
   }
-  .fotosPrincipales .foto1:hover {
+  .fotosPrincipales .foto1:hover, .fotosPrincipales .foto2:hover, .fotosPrincipales .foto3:hover, .fotosPrincipales .foto4:hover {
     border: 3px solid #FD790A;
     background-color: #FD790A;
   }
